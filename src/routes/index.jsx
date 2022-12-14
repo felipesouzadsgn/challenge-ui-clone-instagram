@@ -13,7 +13,7 @@ export const Routers = () => {
         <Route path="/" element={<Home />} />
         <Route path="/direct" element={<Direct />} />
         <Route path="/explore" element={<Explore />} />
-        <Route path="/user" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/p/:id"/>
       </Routes>
       {background && (
