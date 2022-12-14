@@ -1,5 +1,11 @@
+import { Navbar } from "./components/Navbar"
+import { Routers } from "./routes"
+
 export const App = () => {
   return (
-    <h1>Hello</h1>
+    <>
+      <Navbar/>
+      <Routers/>
+    </>
   )
 }
