@@ -1,4 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom"
+import { OpenModal } from "../components/Modal"
 import { Direct } from "../pages/Direct"
 import { Explore } from "../pages/Explore"
 import { Home } from "../pages/Home"
@@ -11,14 +12,14 @@ export const Routers = () => {
     <div>
       <Routes location={background || location}>
         <Route path="/" element={<Home />} />
-        <Route path="/direct" element={<Direct />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/p/:id"/>
+        <Route path="direct" element={<Direct />} />
+        <Route path="explore" element={<Explore />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="p/:idPost" element={<OpenModal />} />
       </Routes>
       {background && (
         <Routes>
-          <Route path="/p/:id"/>
+          <Route path="p/:idPost" element={<OpenModal />} />
         </Routes>
       )}
     </div>
