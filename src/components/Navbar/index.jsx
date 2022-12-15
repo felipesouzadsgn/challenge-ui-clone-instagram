@@ -10,6 +10,18 @@ import iconMensages from "../../assets/svg/icon-mensages.svg"
 import iconNotifications from "../../assets/svg/icon-notifications.svg"
 import iconPlus from "../../assets/svg/icon-plus.svg"
 import imgProfile from "../../assets/img/profile.jpg"
+import { Link } from "react-router-dom"
+
+const NavLink = ({ to, title, icon }) => {
+  return (
+    <Link to={to} className="nav__link">
+      <img className="nav__icon" src={icon} alt="home" />
+      <span className="nav__link-title">
+        {title}
+      </span>
+    </Link>
+  )
+}
 
 export const Navbar = () => {
   return (
@@ -23,75 +35,40 @@ export const Navbar = () => {
         </a>
         <ul className="nav__list">
           <li className="nav__item">
-            <a className="nav__link" href="#">
-              <img className="nav__icon" src={iconHome} alt="home" />
-              <span className="nav__link-title">
-                Página Inicial
-              </span>
-            </a>
+            <NavLink to="/" title="Página inicial" icon={iconHome} />
           </li>
           <li className="nav__item nav__item-search">
-            <a className="nav__link" href="#">
-              <img className="nav__icon" src={iconSearch} alt="home" />
-              <span className="nav__link-title">
-                Pesquisa
-              </span>
-            </a>
+            <NavLink to="/search" title="Pesquisa" icon={iconSearch} />
           </li>
 
           <li className="nav__item">
-            <a className="nav__link" href="#">
-              <img className="nav__icon" src={iconExplore} alt="home" />
-              <span className="nav__link-title">
-                Explorar
-              </span>
-            </a>
+            <NavLink to="/explore" title="Explorar" icon={iconExplore} />
           </li>
 
           <li className="nav__item">
-            <a className="nav__link" href="#">
-              <img className="nav__icon" src={iconMensages} alt="home" />
-              <span className="nav__link-title">
-                Mensagens
-              </span>
-            </a>
+            <NavLink to="/direct" title="Mensagens" icon={iconMensages} />
           </li>
 
           <li className="nav__item nav__item-notifications">
-            <a className="nav__link" href="#">
-              <img className="nav__icon nav__icon" src={iconNotifications} alt="home" />
-              <span className="nav__link-title">
-                Notificações
-              </span>
-            </a>
+            <NavLink to="/notifications" title="Notificações" icon={iconNotifications} />
           </li>
 
           <li className="nav__item">
-            <a className="nav__link" href="#">
-              <img className="nav__icon" src={iconPlus} alt="home" />
-              <span className="nav__link-title">
-                Criar
-              </span>
-            </a>
+            <NavLink to="/create" title="Criar" icon={iconPlus} />
           </li>
 
           <li className="nav__item">
-            <a className="nav__link" href="#">
+            <Link to="/profile" className="nav__link">
               <img className="nav__img" src={imgProfile} alt="home" />
               <span className="nav__link-title">
                 Perfil
               </span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="nav__item nav__item-more">
-        <a className="nav__link" href="#">
-          <img className="nav__icon nav__icon-toggle" src={iconMenu} alt="home" />
-          <span className="nav__link-title">
-            Mais
-          </span>
-        </a>
+        <NavLink to="/more" title="Mais" icon={iconMenu} />
       </div>
     </nav>
   )
