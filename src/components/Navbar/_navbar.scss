@@ -1,0 +1,45 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 24.0rem;
+  height: 100%;
+  padding: .8rem 1.2rem 2.0rem 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-right: 1px solid rgb(var(--ig-separator));
+
+  &__menu {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__logo {
+    width: 100%;
+    padding: 2.5rem 1.2rem 1.6rem 1.2rem;
+    margin-bottom: 2.0rem;
+    display: block;
+  }
+
+  &__item {
+    padding: 1.2rem;
+    margin: .8rem 0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    color: rba(var(--ig-primary-text));
+  }
+
+  &__img {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+  }
+}
