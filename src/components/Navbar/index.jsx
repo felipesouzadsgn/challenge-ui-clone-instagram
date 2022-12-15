@@ -18,60 +18,79 @@ export const Navbar = () => {
         <a className="nav__logo" href="#">
           <img src={logoInstagram} alt="home" />
         </a>
+        <a className="nav__logo-icon" href="#">
+          <img className="nav__icon" src={iconInstagram} alt="home" />
+        </a>
         <ul className="nav__list">
           <li className="nav__item">
             <a className="nav__link" href="#">
               <img className="nav__icon" src={iconHome} alt="home" />
-              Página Inicial
+              <span className="nav__link-title">
+                Página Inicial
+              </span>
             </a>
           </li>
-          <li className="nav__item">
+          <li className="nav__item nav__item-search">
             <a className="nav__link" href="#">
               <img className="nav__icon" src={iconSearch} alt="home" />
-              Pesquisa
+              <span className="nav__link-title">
+                Pesquisa
+              </span>
             </a>
           </li>
 
           <li className="nav__item">
             <a className="nav__link" href="#">
               <img className="nav__icon" src={iconExplore} alt="home" />
-              Explorar
+              <span className="nav__link-title">
+                Explorar
+              </span>
             </a>
           </li>
 
           <li className="nav__item">
             <a className="nav__link" href="#">
               <img className="nav__icon" src={iconMensages} alt="home" />
-              Mensagens
+              <span className="nav__link-title">
+                Mensagens
+              </span>
             </a>
           </li>
 
-          <li className="nav__item">
+          <li className="nav__item nav__item-notifications">
             <a className="nav__link" href="#">
-              <img className="nav__icon" src={iconNotifications} alt="home" />
-              Notificações
+              <img className="nav__icon nav__icon" src={iconNotifications} alt="home" />
+              <span className="nav__link-title">
+                Notificações
+              </span>
             </a>
           </li>
 
           <li className="nav__item">
             <a className="nav__link" href="#">
               <img className="nav__icon" src={iconPlus} alt="home" />
-              Criar
+              <span className="nav__link-title">
+                Criar
+              </span>
             </a>
           </li>
 
           <li className="nav__item">
             <a className="nav__link" href="#">
               <img className="nav__img" src={imgProfile} alt="home" />
-              Perfil
+              <span className="nav__link-title">
+                Perfil
+              </span>
             </a>
           </li>
         </ul>
       </div>
-      <div className="nav__item">
+      <div className="nav__item nav__item-more">
         <a className="nav__link" href="#">
-          <img className="nav__icon" src={iconMenu} alt="home" />
-          Mais
+          <img className="nav__icon nav__icon-toggle" src={iconMenu} alt="home" />
+          <span className="nav__link-title">
+            Mais
+          </span>
         </a>
       </div>
     </nav>
