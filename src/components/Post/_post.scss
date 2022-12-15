@@ -1,0 +1,51 @@
+.post {
+  grid-area: post;
+}
+
+.story {
+  grid-area: story;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+  }
+}
+
+
+@media screen and (max-width: 736px) {
+  .card {
+    &__icon {
+    width: 1.4rem;
+    height: 1.4rem;
+
+    }
+
+  }
+}
