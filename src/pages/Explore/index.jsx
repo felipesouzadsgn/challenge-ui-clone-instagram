@@ -1,7 +1,7 @@
+import "./styles.scss"
 import templatePost from "../../assets/img/template-post.jpg"
 import templateStory from "../../assets/img/template-story.png"
 
-import "./_explore.scss"
 import { Post } from "../../components/Post"
 
 import { posts } from "../../utils/data"

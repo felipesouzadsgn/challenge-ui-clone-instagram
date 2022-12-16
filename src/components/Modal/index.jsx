@@ -4,7 +4,7 @@ import iconArrow from "../../assets/svg/icon-arrow.svg"
 import imgUser from "../../assets/img/profile.jpg"
 import iconOption from "../../assets/svg/icon-option.svg"
 
-import "./_modal.scss"
+import "./styles.scss"
 
 import { useNavigate } from "react-router-dom"
 import { ViewContent } from "../ViewContent"

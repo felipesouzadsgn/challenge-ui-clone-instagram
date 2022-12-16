@@ -1,4 +1,4 @@
-import "./_navbar.scss"
+import "./styles.scss"
 
 import logoInstagram from "../../assets/svg/logo-instagram.svg"
 import iconInstagram from "../../assets/svg/icon-instagram.svg"

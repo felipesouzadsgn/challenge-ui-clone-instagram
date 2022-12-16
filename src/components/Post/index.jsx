@@ -1,4 +1,5 @@
-import "./_post.scss"
+import "./styles.scss"
+
 import iconCarrossel from "../../assets/svg/icon-carrossel.svg"
 import iconVideo from "../../assets/svg/icon-video.svg"
 
